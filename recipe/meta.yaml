@@ -10,16 +10,16 @@ source:
   sha256: b2f80051dc3191262b9a95a6c625427a53a50814b0f162a87fdb22fccf978090
 
 build:
-  noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.0
+    - python
     - pip
+    - wheel
   run:
-    - python >=3.0
+    - python
     - numpy >=1.15.4
     - pandas >=1.0.4
     - python-dateutil >=2.8.0
@@ -39,7 +39,11 @@ about:
   home: https://github.com/kaixuyang/holidays-extension
   summary: Extended holidays package
   license: MIT
+  license_family: MIT
   license_file: LICENSE
+  dev_url: https://github.com/kaixuyang/holidays-extension
+  doc_url: https://github.com/dr-prodigy/python-holidays/blob/beta/README.rst
+  description: This repo forks the Facebook Prophet library, and serve as an extension of the Python holidays library. The holidays are customized and extended.
 
 extra:
   recipe-maintainers:

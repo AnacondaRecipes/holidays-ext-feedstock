@@ -6,6 +6,7 @@ package:
   version: {{ version }}
 
 source:
+  skip: True  # [s390x]
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/holidays-ext-{{ version }}.tar.gz
   sha256: b2f80051dc3191262b9a95a6c625427a53a50814b0f162a87fdb22fccf978090
 
